@@ -1,21 +1,21 @@
 
 public class Swap2 {
-	int a;
-	public void Swapping()
-	{
-		int a,b;
-		
-	a= 5;
-	b=7;
-	System.out.println("Before Swapping a is = " +a);
-	System.out.println("Before Swapping b is =" +b);
 	
-	a = a + b;
-    b = a - b;
-    a = a - b;
+		public void Swapping()
+	{
+		int x,y;
+		
+	x= 5;
+	y=7;
+	System.out.println("Before Swapping x is = " +x);
+	System.out.println("Before Swapping y is =" +y);
+	
+	x = x + y;
+    y = x - y;
+    x = x - y;
    
-    System.out.println("After Swapping value of a is ="  +a);
-    System.out.println("After Swapping value of b is ="  +b);
+    System.out.println("After Swapping value of x is ="  +x);
+    System.out.println("After Swapping value of y is ="  +y);
 }
 	public static void main(String args[])
 	{
