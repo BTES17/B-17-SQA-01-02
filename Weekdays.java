@@ -1,69 +1,83 @@
-package Roman;
-
+/**
+ * Created by RahulMehta on 3/28/2017.
+ */
 public class Weekdays {
 
-	
-	void day()
-	{
-		 String Day="Th";
-		
-		switch(Day)
-		{
-		case "Mo":
-		{
-		
-			System.out.println("Its Monday");
-			break;
-		}
-		case "Tu":
-		{
-			
-			System.out.println("Its Tuesday");
-			break;
-		}
-		case "We":
-		{
-			
-			System.out.println("Its Wednesday");
-			break;
-		}
-		case "Th":
-		{
-			
-			System.out.println("Its Thursday");
-			break;
-		}
-		case "Fr":
-		{
-			
-			System.out.println("Its Friday");
-			break;
-		}
-		case "Sa":
-		{
-			
-			System.out.println("Its Saturday");
-			break;
-		}
-		case "Su":
-		{
-			
-			System.out.println("Its Sunday");
-			break;
-		}
-		default:
-		{
-			System.out.println("invalid day code");
-		}
-		}
-	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method 
-		
-		Weekdays object= new Weekdays();
-		
-		object.day();
+    public void days()
 
-	}
+    {
+
+        String a="Saturday";
+        switch(a)
+        {
+            case "Monday":
+
+            {
+                System.out.println("Today is Monday :(");
+                break;
+            }
+
+            case "Tuesday":
+
+            {
+                System.out.println("Today is Tuesday :(");
+                break;
+            }
+
+            case "Wednesday":
+
+            {
+                System.out.println("Today is Wednesday :(");
+                break;
+            }
+
+
+            case "Thursday":
+
+            {
+                System.out.println("Today is Thursday :(");
+                break;
+            }
+
+            case "Friday":
+
+            {
+                System.out.println("Today is Friday :(");
+                break;
+            }
+
+            case "Saturday":
+
+            {
+                System.out.println("Today is Saturday :(");
+                break;
+            }
+
+            case "Sunday":
+
+            {
+                System.out.println("Today is Sunday :D");
+                break;
+            }
+
+            default:
+                {
+    System.out.println("Invalid input, please try again with the day name");
+}
+        }
+
+
+    }
+
+public static void main(String args[])
+
+{
+
+   Weekdays Obj=new Weekdays();
+   Obj.days();
+
+}
+
+
 
 }
