@@ -1,49 +1,45 @@
-package Roman;
 
 public class Calculator {
-
+	public void cal()
 	
-	void calc()
 	{
-		int a=6; int b=3; int c; String operation="/";
+		float a, b;
+		a=3;
+		b=5;
+		String oper = "+";
+		switch (oper)
 		
-		switch(operation)
 		{
-		case "*":
-		{
-			c=a*b;
-			System.out.println(c);
-			break;
-		}
 		case "+":
 		{
-			c=a+b;
-			System.out.println(c);
+			System.out.println(a+b);
 			break;
 		}
+		
 		case "-":
 		{
-			c=a-b;
-			System.out.println(c);
-			break;
+	       System.out.println(a-b);
+		break;
 		}
-		case "/":
-		{
-			c=a/b;
-			System.out.println(c);
-			break;
-		}
-		default:
-		{
-			System.out.println("invalid operation");
-		}
+		 case "*":
+		 {
+		System.out.println(a*b);
+		break;
+		 }
+	case "/":
+	{
+		System.out.println(a/b);
+		break;
+	}
+	default:
+		System.out.println("invalid");
 		}
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Calculator object= new Calculator();
-		object.calc();
+	
+	public static void main (String args[])
+	{
+		Calculator obj=new Calculator();
+		obj.cal();
 
 	}
 
