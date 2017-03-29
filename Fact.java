@@ -1,26 +1,29 @@
+/**
+ * Created by RahulMehta on 3/29/2017.
+ * Write a program to find factorial of number say number is 5 then factorial will be 1*2*3*4*5=120
+ */
+
 import java.util.Scanner;
-
-// Write a program to find factorial of number say number is 5 
-// then factorial will be 1*2*3*4*5=120
-
 public class Fact {
-	public static void main (String args[])
-	{
-		int num=0;
-		int i;
-		int fact=1;
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Enter a number");
-		num=scan.nextInt();
-		for(i=1;i<=num;i++)
-		{
-			fact=fact*i;
-			
-		}
-		System.out.println();
-		System.out.println("Fact of number  is ="+ fact );
-		
-	
-	}
 
+    public void facto()
+    {
+        int a,b,i,n;
+        b=1;
+        System.out.println("Enter the number for factorial");
+        Scanner scan=new Scanner(System.in);
+        a=scan.nextInt();
+        for (i=1;i<=a;i++)
+        {
+         b=b*i;
+        }
+        System.out.println("Factorial is "+b);
+
+    }
+    public static void main(String args[]) {
+
+
+        Fact Obj = new Fact();
+        Obj.facto();
+    }
 }
