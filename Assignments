@@ -39,3 +39,14 @@ Date 29/3/17
 4. Write a program to print fibonacci series that is 0 1 1 2 3 5 8 13 21..... its like the sum of last two number will be the next number in the series. 
 5. WAP to print Odd series upto N. 
 
+Date 30/3/17
+1. WAP to reverse a number 
+2. WAP to find that a number is Armstrong or not like sum of cube of digits is equal to the number itself 
+          EXAMPLE: 153 
+          1+5*5*5+3*3*3=153
+3. WAP to find that a number is Palindrome or not 
+                    Example : Reversing a number will give the original number like 1221 
+4. WAP to the sum of digits of a number 
+5. WAP to find the frequency of each digit in a number. 
+6. WAP to print the series of first N prime numbers. 
+
