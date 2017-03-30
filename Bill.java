@@ -1,28 +1,58 @@
-
+//Write a program to input electricity unit charges and calculate total electricity bill according to the given condition:
+                 //   For first 50 units Rs. 0.50/unit
+                //    For next 100 units Rs. 0.75/unit
+                 //   For next 100 units Rs. 1.20/unit
+                  //  For unit above 250 Rs. 1.50/unit
+                   // An additional surcharge of 20% is added to the bill 
+                    
 public class Bill {
-	public void Billing()
+
+void billing()
 	{
- float x= 234;
-if(x>=0 && x<=50)
-{
-	System.out.println("Bill generated is Rs " + ((x*0.05)+(0.2)));
-}
-else if (x>=51 && x<=150)
+	int a=51;float c1; float d1;float e1; ;float f1; 
 	{
-	System.out.println("Bill generated is Rs " + ((x*0.75)+(0.2)));
+		if(a>=0 && a<=50 )
+		{
+			float c=(float)0.50*a;
+			
+			c1=(float) (c+0.20*(c));
+			
+			System.out.println("Total bill in RS :"+c1);
+		}
+		
+		
+		else if(a>=51 && a<=150)
+		{
+		float	d= (float) (0.50*a+(a-50)*0.75);
+			
+			d1=(float) (d+0.20*(d));
+			
+			System.out.println("Total bill in RS :"+d1);
+			
+		}
+		else if(a>=151&& a<=250)
+		{
+		float	e=(float)(0.50*a+(a-50)*0.75+(a-150)*1.20);
+			e1=(float) (e+0.20*(e));
+			System.out.println("Total bill in RS :"+e1);
+		}
+		else if(a>=251)
+		{
+			float f=(float)(0.50*a+(a-50)*0.75+(a-150)*1.20+(a-250)*1.50);
+			f1=(float) (f+0.20*(f));
+			System.out.println("Total bill in RS :"+f1);
+		}
+		
+		
+	}
+	}
+	public static void main(String[] args) {
+		
+	
+		
+	Bill object=new Bill();
+		object.billing();
+
+	}
 }
-else if (x>=151 && x<=250)
-{
-	System.out.println("Bill generated is Rs " +((x*1.20)+(0.2)));
-}
-else
-{
-	System.out.println("Bill generated is Rs " +((x*1.50)+(0.2)));
-}
-}
-public static void main (String args[])
-{
-	Bill object= new Bill();
-	object.Billing();
-}
-}
+
