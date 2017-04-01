@@ -11,21 +11,23 @@ public class fibonnaci {
 	        int f1, f2, fib, i;
 	        f1 = fib = 0;
 	        f2 = 1;
-	 
+
 	        Scanner scan = new Scanner(System.in);
-	        System.out.print("Enter number: ");
+	        System.out.println("Enter number: ");
 	       
-	        a = scan.nextInt();
-	 
+	        int n = scan.nextInt();
 	        
-	        for (i = 0; i < a; i++) {
+	        System.out.print(a);
+	        
+	        for (i = 0; i < n; i++) {
+	        	
 	           
 	            f1 = f2;
 	            
 	            f2 = fib;
 	      
 	            fib = f1 + f2;
-	            System.out.print(fib);
+	            System.out.print(fib+"");
 	        }
 	 
 	    } 
