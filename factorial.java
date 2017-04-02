@@ -1,24 +1,38 @@
+package Roman;
+
+
 import java.util.Scanner;
 
 public class factorial {
 
-	public static void main (String args[])
+	Scanner scan =new Scanner(System.in);
 	{
-		int n=0;
-		int i;
-		int f=1;
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Enter a number");
-		n=scan.nextInt();
-		for(i=1;i<=n;i++)
-		{
-			f=f*i;
+	System.out.println("enter value of N= ");
+	}
+	 int N= scan.nextInt();
 			
-		}
-		System.out.println();
-		System.out.println("Factorial  of number  is ="+ f);
+	void natural()
+	{
+		int i, a=1;
 		
+		
+		for (i=1;i<=N;i++)
+		{
+			a=a*i;
+			 
+		
+		}
+		System.out.println("Factorial of "+N+" is "+a);
+		
+	}
 	
-}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		factorial object=new factorial();
+		object.natural();
+		
+		
+	}
 
 }
