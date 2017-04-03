@@ -12,7 +12,7 @@ public class ArrayMax {
 		
 		for (int i=0;i<size;i++)
 		{
-			n=scan.nextInt();
+			a[i]=scan.nextInt();
 			if(a[i]>n)
 	        n=a[i];
 			
