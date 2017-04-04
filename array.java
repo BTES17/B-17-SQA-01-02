@@ -1,90 +1,61 @@
-package Roman;
-
-//1.To declare and print the array 
-//2.To search a no. in the array 
-//3. To find the maximum no. in the array
 import java.util.Scanner;
 public class array {
-
+	
+	void arr()
+	{
+		int size,i;
+		Scanner scan=new Scanner(System.in);
+	System.out.println("Enter size of array");
+	size= scan.nextInt();
+	
+	int[] array1=new int[size];
+	System.out.println("enter integer values in array to   "+size);
+	
+	for(i=0; i<size; i++)
+	{
+		
+		array1[i]=scan.nextInt();
+		
+	}System.out.println();
+	System.out.print("  values in array are:");
+	for(i=0; i<size; i++)
+	{
+		
+		
+		System.out.print(" " +array1[i]);
+	}System.out.println();
+	
+	int j,temp;
+	for(i=0; i<size; i++)
+	{
+		for(j=i+1;j<size;j++)
+		
+		{
+			if(array1[i]>array1[j])
+				
+			{
+			temp=array1[i];
+			array1[i]=array1[j];
+			array1[j]=temp;
+			
+			}
+				
+		}
+	}
+	System.out.print("Sorted array:");
+	for(j=0;j<size;j++)
+	{
+		
+		System.out.print("  " +array1[j]);
+	}
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		int r,c, rowsize, columnsize;
-		Scanner Scan=new Scanner(System.in);
-		System.out.println("Enter row value");
-		rowsize=Scan.nextInt();
-		System.out.println("Enter column value");
-	
-		columnsize=Scan.nextInt();
 		
-		int array[][]=new int[rowsize][columnsize];
+		array object= new array();
+				object.arr();
 		
-		System.out.println("Enter values in array");
-		
-		for(r=0;r<rowsize;r++)
-		{
-			
-				for(c=0;c<columnsize;c++)
-				{
-					array[r][c]=Scan.nextInt();
-					
-				}
-				
-		}
-		
-		for(r=0;r<rowsize;r++)
-		{
-			
-				for(c=0;c<columnsize;c++)
-				{
-					System.out.print(" "+array[r][c]);
-					
-				}
-				System.out.println("");
-		}
-		
-		int N,flag=0;;
-	System.out.println("Enter no. to search in the array");
-	N=Scan.nextInt();
-		
-		for(r=0;r<rowsize;r++)
-		{
-			
-		for(c=0;c<columnsize;c++)
-				{
-					
-					
-				
-		if (N==array[r][c])
-		{
-			System.out.println("Entered no. is present in the array");
-			flag=1;
-		} }
-			
-		}
-		if(flag==0)
-		{
-			System.out.println("Entered no. is not present in the array");
-		}
-
-				
-		
-			int max=array[0][0];
-			for(r=0;r<rowsize;r++)
-			{
-				
-			for(c=0;c<columnsize;c++)
-					{
-						if(max<array[r][c])
-		 		
-						{
-							max=array[r][c];
-					
-						}
-						
-					}
-			}System.out.println("maximum element in array is "+max);
-			
 	}
+
 }
-			
