@@ -74,3 +74,10 @@ Date 31/3/17
 6. Kindly upload the files in the folder as we will discuss tomorrow.
 7. Practicse revrese(), toupercase(), tolowercase(), trim(), contains(), equals(), ==, length(),
    subString, chartoArray() and valueof() methods . 
+   
+   6/4/17
+   1. WAP to store details of the five student as Name, Rollno, marks, collegename. 
+        -Create a method to add the student detail.
+        -Create a method that disply thr record of the each student.
+        - Calulateand print the percentagee of the student.
+        - Practicse this using static, local and instance variables.
