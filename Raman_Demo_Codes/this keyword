@@ -1,0 +1,104 @@
+package MyPackage;
+
+import java.util.Scanner;
+
+public class MyClass {
+	int rollno;
+	int marks; 
+	static MyClass obj;
+	MyClass(int a, int b)
+	{
+		rollno=a;
+		marks=b;
+	}
+	MyClass ()
+	{
+		this(2,5);
+	}
+	public static void main(String[] args) {
+		
+		obj= new MyClass();
+		MyClass obj1= new MyClass();
+		MyClass obj2= new MyClass();
+	
+ 
+		//System.out.println(obj);
+   
+ //  obj.display();
+  
+   obj1.display();
+  
+   obj2.display();
+	}
+	
+	void add (int rollno, int marks)
+	{
+	
+		this.rollno=rollno;
+		this.marks=marks;
+		
+		
+	}
+	void display ()
+	{
+		
+		
+		System.out.println(this.rollno);
+	
+	}
+}
+
+
+
+
+
+package MyPackage;
+
+public class MyClass1 {
+	int rollno;
+	int marks; 
+
+	void setRollno(int rollno)
+	{
+	this.rollno=rollno;	
+	}
+	int getRollno()
+	{
+		return this.rollno;
+	
+	}
+	void setMarks(int marks)
+	{
+	this.marks=marks;	
+	}
+	int[] getMarks()
+	{
+		int marks[]=new int[10];
+		return marks;
+		
+	
+	}
+}
+
+
+
+package MyPackage;
+
+import java.util.Scanner;
+
+public class demo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+	MyClass1 obj[]= new MyClass1[10];
+	for(int i=0;i<10;i++)
+	{
+		obj[i]=new MyClass1();
+		int a= scan.nextInt();
+		obj[i].setMarks(a);
+		int[] b=obj[i].getMarks();
+	}
+
+	}
+
+}
