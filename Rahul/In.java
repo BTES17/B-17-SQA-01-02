@@ -1,4 +1,4 @@
-
+/*
  class Second {
 
 	public void first() {
@@ -8,14 +8,14 @@
 	}
 
 }
-
-
+*/
+import Hoo.Second;
 
  public class In extends Second
 {
 	public static void main(String args[])
 	{
-	Second Obj=new Second();
+	In Obj=new In();
 	Obj.first();
 	}
 }
