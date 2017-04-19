@@ -91,3 +91,16 @@ Date 31/3/17
   3. Experiment the access specifier discussed today and implement the aggregation concept. 
   4. Solve the pending task in the previous assgnements. 
   5. Solve the Ages questions present in the Aptitude Repository. 
+  
+  19/4/17
+  Write the code to observe the working of comand line arguments in main method?
+  Write a code for try catch simulation. Experiment that code continue to execute even if exception occurs.
+  Write a code for multiple catch blocks
+  Write a code for nested try and catch block 
+  What are Errors
+  What are checked and unchecked exceptions
+  Which class is the parent of the Exception and Error class. 
+  Which exception can be handled at compile time 
+  Which exceptions are handled at the run time
+  Which Exceptions cant be handled. 
+  
