@@ -14,10 +14,18 @@ public class Ind {
 		System.out.println("OK, thank you for entering your age");
 		}
 	
-	catch(Exception e)
+	/*catch(Exception e)
 	{
 		System.out.println("Enter the age in numerical form please");
 	}
+	*/
+	finally{
+		
+		System.out.println("Thank you for submitting your age, we will validate it shortly.");
+	}
+	
+	System.out.println("checking if this prints or not.");
+	
 	}
 
 public static void main(String args[])
