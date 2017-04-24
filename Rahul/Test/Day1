@@ -1,0 +1,44 @@
+Day1 
+1. Why Java is called platform independent? 
+2. What is the output of 5&7?
+3. What is value a and b for  (b= a++ + a++) if a=5?
+4. Is statement    char r=100; correct?
+5. What are datatypes? 
+6. WAP to print    
+a. 1
+b. 12
+c. 123
+d. 1234
+e. 12345
+
+
+
+Ans1: Java is called as platform inependent as the compiler converts the code into byte code and this bytecode is platform independent.
+It can be run on any operating system as Java code never interacts with the operating system directly, it is the JRE which interacts with the OS.
+Thus, due to bytecode conversion Java is platform independent.
+
+Ans 2: 
+
+Ans 3: 
+
+Ans 4: No, the datatype is character hence we can initialize it with the help of a character only using ''. For e.g. char r='a';
+
+Ans 5: Datatypes are the types of variable/data that we want to use in the program, if we want to use integer values in our program then we use int as the datatype. Similarly, for strings, character we use Strings, char respectively. So this defines the type of data that we require to use in the program. we have two types of datatypes - Primitive (pre-defined) and non-primitive (user defined). 
+
+Ans 6: 
+public class Print{
+
+public void met(){
+
+int i,a,b;
+for(i=1;i<=5;i++)
+{
+  
+}
+
+public static void main(String args[])
+{
+      Print Obj=new Print();
+      Obj.met();
+}
+}
