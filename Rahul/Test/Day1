@@ -19,26 +19,27 @@ Thus, due to bytecode conversion Java is platform independent.
 
 Ans 2: 
 
-Ans 3: 
+Ans 3: 11
 
 Ans 4: No, the datatype is character hence we can initialize it with the help of a character only using ''. For e.g. char r='a';
 
 Ans 5: Datatypes are the types of variable/data that we want to use in the program, if we want to use integer values in our program then we use int as the datatype. Similarly, for strings, character we use Strings, char respectively. So this defines the type of data that we require to use in the program. we have two types of datatypes - Primitive (pre-defined) and non-primitive (user defined). 
 
 Ans 6: 
-public class Print{
-
-public void met(){
-
-int i,a,b;
-for(i=1;i<=5;i++)
-{
-  
-}
-
-public static void main(String args[])
-{
-      Print Obj=new Print();
-      Obj.met();
-}
+public class Number {
+	public void abc()
+	{
+		int i,s=0;
+		
+		for(i=1;i<=5;i++)
+		{
+			s=s*10+i;
+			System.out.println(s);
+		}	
+	}	
+	public static void main(String args[])
+	{
+		Number Obj=new Number();
+		Obj.abc();
+			}
 }
